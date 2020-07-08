@@ -1,5 +1,5 @@
-list1=[2,3,5,8,10]
-sum1=10
+list1=[2,3,5,8,1,-1,-1,1]
+sum1=0
 t=[]
 for i in range(len(list1)+1):
     list2=[]

@@ -1,5 +1,7 @@
-sum1 = 1
-B=3
-for i in range(B):
-    sum1 += (2 **(i+1))
-print(sum1)
+import collections
+s = [('yellow', 1), ('blue', 2), ('yellow', 3), ('blue', 4), ('red', 1)]
+d = collections.defaultdict(list)
+for k, v in s:
+   d[k].append(v)
+
+print(d)

@@ -1,6 +1,6 @@
 #unlimited no. of coins are available
-list1=[1,2,5]
-sum1=11
+list1=[1,2,3]
+sum1=4
 t=[]
 for i in range(len(list1)+1):
     list2=[]
