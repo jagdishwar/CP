@@ -1,4 +1,4 @@
-list1=[-3,6,-6,3]
+
 def kadanealgo(list1):
     set1=set()
     sum1=0
@@ -22,7 +22,7 @@ for k in range(len(matrix[0])):
         for i in range(len(matrix)):
             ele = matrix[i][j]
             list1[i] += ele
-        print(list1)
+
         maxval = kadanealgo(list1)
 
         maxvalue += maxval

@@ -1,4 +1,4 @@
-list2=
+list2=output
 s=0
 end=len(list2)-1
 ele=10

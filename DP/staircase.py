@@ -1,3 +1,5 @@
+import functools
+functools.lru_cache()
 class Solution:
     # @param A : integer
     # @return an integer

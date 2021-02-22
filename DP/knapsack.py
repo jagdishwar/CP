@@ -26,7 +26,7 @@ for i  in range(0,len(wt)+1):
 for i in range(1,len(wt)+1):
     for j in range(1,W+1):
         if wt[i-1]<=j:
-            t[i][j]=max((val[i-1]+t[i][j-wt[i-1]]),t[i-1][j])
+            t[i][j]=max((val[i-1]+t[i-1][j-wt[i-1]]),t[i-1][j])
         elif wt[i-1]>j:
             t[i][j]=t[i-1][j]
 print(t[-1][-1])
@@ -47,5 +47,3 @@ while i>0 and j>0:
         i-=1
 
 print(result)
-
-list.in

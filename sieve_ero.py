@@ -1,13 +1,14 @@
+n=20
+prime=[True]*n
+for i in range(2,int(n/2)):
+    if prime[i]==True:
+        for j in range(i*2,n,i):
+            prime[j]=False
 
-A=1048574
-sieve = [True for i in range(1, A + 1)]
-k = 2
-while (k * k < A + 1):
-    if sieve[k] == True:
-        for i in range(k * k, A, k):
-            sieve[i] = False
-    k += 1
+print(prime)
+list1=[]
+for i in range(2,len(prime)):
+    if prime[i]==True:
+        list1.append(i)
 
-for i in range(2, A):
-    if sieve[A - i] and sieve[i]:
-        print(i, A - i)
+print(list1)

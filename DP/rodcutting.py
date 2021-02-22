@@ -13,7 +13,7 @@ for i in range(len(list1)+1):
 
 print(t)
 for i in range(1,len(list1)+1):
-    for j in range(n+1):
+    for j in range(1,n+1):
         if list1[i-1]<=j:
             t[i][j]= max(val[i-1]+t[i][j-list1[i-1]],t[i-1][j])
         elif list1[i-1]>j:

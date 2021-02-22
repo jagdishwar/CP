@@ -1,0 +1,2 @@
+dict={}
+print(all(dict))

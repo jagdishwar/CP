@@ -1,4 +1,6 @@
-#2sum1-s1=minimum
+#s1+s2=sum1
+#s2=sum1-s1
+#sum1-2s1=minimum
 #find s1
 t=[]
 list1=[ 8, 4, 5, 7, 6, 2 ]

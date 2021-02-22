@@ -2,7 +2,7 @@ memo={}
 def solve(s,i,j):
     if i>=j:
         return 0
-    if s[i:j+1]==s[i:j+1][::-1]:
+    if s[i]==s[j]:
         return 1
     if (i,j) in memo:
         return memo[(i,j)]
@@ -12,7 +12,7 @@ def solve(s,i,j):
         mn=min(mn,memo[(i,j)])
     memo[(i,j)]=mn
     return memo[(i,j)]
-s="kwtbjmsjvbrwriqwxadwnufplszhqccayvdhhvscxjaqsrmrrqngmuvxnugdzjfxeihogzsdjtvdmkudckjoggltcuybddbjoizu"
+s="aba"
 i=0
 j=len(s)-1
 value=solve(s,i,j)

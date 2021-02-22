@@ -1,3 +1,4 @@
+
 memo={}
 def solve(e,f):
     if f==0 or f==1:
